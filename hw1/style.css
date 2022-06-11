@@ -1,0 +1,50 @@
+/*
+Styles:
+BODY – background color, margin between 20-80px
+H1 – Very large (between 40-70pt), font-family: “trebuchet MS”
+H2 – Large (between 30-55pt), font-family: your choice
+Paragraph text – “trebuchet MS”, color of your choice, size 14-18pt
+Ordered List – color of your choice, font family of your choice
+Horizontal rule – 75% width, color of your choice
+*/
+
+/*
+Chose Trebuchet MS for all fonts.
+Chose #cacac2 for all element colors.
+Chose #1f2430 for the background color.
+*/
+
+body {
+    background-color: #1f2430; 
+    margin: 20px;
+}
+
+* {
+    font-family: 'Trebuchet MS';
+    color: #cacac2;
+}
+
+a {
+    color: #0369a1;
+}
+
+h1 {
+    
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+
+ol {
+    color: black;
+}
+
+hr {
+    width: 75%;
+}
