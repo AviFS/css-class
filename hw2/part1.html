@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2a</title>
+    <!-- Reference: https://lovinghut.us/redlands/ -->
+    <style>
+        /* I know we haven't covered classes or flex, but I've learned
+        them and am practicing in order to recreate the layout as best as I can.
+        (The loving hut link in the homework was broken, so this is another menu page.)
+        */
+        * {
+            font-family: sans-serif;
+        }
+        .item-card {
+            display: flex;
+            width: 100%;
+        }
+
+        .item-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .item-image {
+            width: 7rem;
+            padding-right: 10px;
+            height: 80%;
+        }
+
+        .item-description {
+            font-size: .9rem;
+        }
+
+        .menu-subheading {
+            background-color: darkgreen;
+            padding: .4rem .2rem;
+            text-align: center;
+            color: white;
+            letter-spacing: .02em;
+            border-radius: .5em;
+        }
+
+        .menu-container {
+            width: 35rem;
+        }
+
+        .site-heading {
+            font-family: cursive;
+            font-size: 3rem;
+            margin-bottom: 0px;
+        }
+
+        .site-subheading {
+            margin-top: 0px;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+Requirements:
+    Your page should include the following guidelines:
+    - Large Heading Text (Restaurant name / logo)
+    - Smaller text heading directly below large text heading
+        (Restaurant catch phrase or “Online Menu”)
+    - Sub-Headings (Breakfast, Lunch, Dinner)
+    - Dish titles (Grilled Salmon, Chicken Caesar, etc...)
+    - Prices (bold)
+    - Dish descriptions (small font-size)
+    - Pictures of Dishes
+    - Include at least two sub-headings and at least two dishes per sub-
+    heading.
+Layout:
+    - You can use HTML tables to align and layout the page content (Div, IDs, Span, and Classes will be covered next lesson).
+    - The specific layout is up to you (Placement of photos, prices, headings, and descriptive text may vary).
+    - Use line-spacing and text-indent properties to position content in a clean, readable manner. Part of the challenge of this assignment is to put a lot of content on the page without
+    CISW 304 – CRC – Fishman – 2022/ 2023
+    making it look cluttered. 10% of the assignment grade will be based on aesthetic quality.
+    -->
+
+    <h1 class="site-heading">Loving Hut</h1>
+    <h2 class="site-subheading">Online Menu</h2>
+
+    <div class="menu-container">
+        <h3 class="menu-subheading">APPETIZERS</h3>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/appetizers/crispy-rolls.jpeg" alt="Crispy Rolls">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Crispy Roll (3 rolls)</span>
+                    <strong class="item-price">$4.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Carrot, cabbage, bean thread noodles (side of homemade sweet and sour sauce)</em></p>
+            </div>
+        </div>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/appetizers/mozz-cheese-stick.jpeg" alt="Mozzarella Cheese Stick">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Crispy Roll (3 rolls)</span>
+                    <strong class="item-price">$4.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Carrot, cabbage, bean thread noodles (side of homemade sweet and sour sauce)</em></p>
+            </div>
+        </div>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/appetizers/pan-fried-dumpling.jpeg" alt="Pan Fried Dumpling">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Pan Fried Dumpling (6 pieces)</span>
+                    <strong class="item-price">$5.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Veggie Dumpling (side of dumpling sauce)</em></p>
+            </div>
+        </div>
+        <h3 class="menu-subheading">SOUPS</h3>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/soups/dumpling-soup.jpeg" alt="Dumpling Soup">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Dumpling Soup</span>
+                    <strong class="item-price">$8.50</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong>Veggie dumpling, spinach, carrot and broccoli</em></p>
+            </div>
+        </div>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/soups/heavenly-soup.jpeg" alt="Heavenly Soup">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Heavenly Soup</span>
+                    <strong class="item-price">$8.50</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Spinach, carrot, broccoli, tofu and V-shrimp</em></p>
+            </div>
+        </div>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/soups/soto-tangkar.jpeg" alt="Soto Tangkar">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Soto Tangkar</span>
+                    <strong class="item-price">$9.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Jakarta Beefless Soup. Potato, tofu, tomato, soy protein, green onion, fried onion in spiced coconut broth served with rice</em></p>
+            </div>
+        </div>
+        <h3 class="menu-subheading">NOODLES</h3>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/noodles/miso-ramen.jpeg" alt="Miso Ramen">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Miso Ramen</span>
+                    <strong class="item-price">$4.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Noodle ramen, corn, spam and green onion in miso broth. (for more tastier order it spicy))</em></p>
+            </div>
+        </div>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/noodles/hot-and-spicy-ramen.jpeg" alt="Hot and Spicy Ramen">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Hot and Spicy Ramen </span>
+                    <strong class="item-price">$9.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Noodle ramen, cabbage, soy protein and green onion in homemade spicy broth)</em></p>
+            </div>
+        </div>
+        <div class="item-card">
+            <div>
+                <img class="item-image" src="./images/noodles/golden-noodle.jpeg" alt="Golden Noodles">
+            </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-name">Golden Noodle</span>
+                    <strong class="item-price">$8.95</strong>
+                </div>
+                <p class="item-description"><em><strong>Ingredients:</strong> Boiled noodle seasoned with garlic sauce topped with greenleaf, soy protein, green onion, fried shallot</em></p>
+            </div>
+        </div>
+    </div>
+    <footer>Based on <a href="https://lovinghut.us/redlands/">Loving Hut's Redlands Menu</a>.</footer>
+
+</body>
+</html>
