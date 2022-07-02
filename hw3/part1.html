@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3a</title>
+    <!-- 
+        Using the company Agora: https://www.agora.io
+    -->
+    <!-- tailwind's css reset -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.1.4/src/css/preflight.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .webpage {
+            width: 1000px;
+            margin: auto;
+        }
+        nav {
+            margin-top: 24px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        #primary-navbar {
+            width: 18em;
+        }
+        #secondary-navbar {
+            width: 7em;
+        }
+        .nav-elem {
+            font-size: .8rem;
+        }
+        #login-button {
+            color: #099DFD;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        #login-button:hover {
+            color: #74caff;
+        }
+        #signup-button:hover {
+            background-color: #74caff;
+        }
+        #signup-button {
+            padding: 2px 4px;
+            background-color: #099DFD;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .active-nav-elem {
+            font-weight: bold;
+        }
+
+        img {
+            margin-top: 15px;
+        }
+        .main {
+            margin-top: 65px;
+            width: 38vw;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bolder;
+        }
+        #today {
+            color: #099DFD;
+        }
+        h2 {
+            font-size: 24px;
+            color: rgb(0, 0, 0, 90%);
+            margin-top: 12px;
+        }
+        #join-button {
+            background-color: #099DFD;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 4px;
+        }
+        #join-button:hover {
+            background-color: #74caff;
+        }
+        #learn-more-button {
+            border: #099DFD solid 1px; 
+            color: black;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        #learn-more-button:hover {
+            background-color: #74caff;
+        }
+        .buttons {
+            margin-top: 12px;
+        }
+        
+        footer {
+            background-color: #C1E7FF;
+            height: 3rem;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        #footer-text {
+            font-size: .8rem;
+            width: 1000px;
+            margin: auto;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="webpage">
+        <nav>
+            <ul>
+                <div id="primary-navbar" class="flex">
+                    <li class="nav-elem active-nav-elem">Home</li>
+                    <li class="nav-elem">Products</li>
+                    <li class="nav-elem">Solutions</li>
+                    <li class="nav-elem">Success Stories</li>
+                </div>
+                <div id="secondary-navbar" class="flex">
+                    <li class="nav-elem" id="login-button">Login</li>
+                    <li class="nav-elem" id="signup-button">Sign up</li>
+                </div>
+            </ul>
+        </nav>
+        <div class="flex">
+            <div class="main">
+                <h1>Build voice and video calling into your app <span id="today">today</span></h1>
+                <h2>SDK's for voice, video, real time data signaling and more</h2>
+                <div class="buttons">
+                    <button id="join-button">Join</button>
+                    <button id="learn-more-button">Learn more</button>
+                </div>
+            </div>
+        <img src="./main-image.png" width="500px" alt="Image didn't load.">
+        </div>
+        <footer>
+            <p id="footer-text">Copyright © 2022 Agora. All rights reserved.</p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
