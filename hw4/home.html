@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopper</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.1.4/src/css/preflight.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    * {
+        font-family: 'Poppins';
+    }
+
+    .container {
+        margin-right: 140px;
+        margin-left: 120px;
+        margin-top: 70px;
+    }
+
+    .logo {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #1A4E1F;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .navmenu {
+        display: flex;
+        width: 509px;
+        justify-content: space-between;
+    }
+
+    .active-nav {
+        font-weight: 500;
+    }
+    
+    .search-bar {
+        width: 636px;
+        height: 68px;
+        background: #FBFBFB;
+        box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.08);
+        border-radius: 100px;
+        margin: auto;
+        margin-top: 99px;
+        display: relative;
+    }
+
+    .search-text {
+        position: absolute;
+        left: 119px;
+        top: 19px;
+    }
+
+    .product-card {
+        margin-top: 99px;
+        width: 228px;
+        height: 274px;
+        background: #FFFFFF;
+        opacity: 0.4;
+        box-shadow: 2px 2px 10px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        padding-left: 43px;
+        padding-top: 1px;
+    }
+
+    .product-image {
+        width: 142px;
+        height: 106px;
+        margin-top: 31px;
+        object-fit: cover;
+    }
+
+    .product-price {
+        margin-top: 20px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .product-name {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+
+    .cta-button {
+        width: 114px;
+        height: 27px;
+        left: 181px;
+        top: 602px;
+        background: #92CD98;
+        border-radius: 7px;
+    }
+
+    .container-products {
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">shopper</div>
+            <ul class="navmenu">
+                <li>home</li>
+                <li class="active-nav">products</li>
+                <li>contact us</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#1A4E1F" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                </li>
+            </ul>
+        </div>
+
+    <div class="search-bar">
+        <!-- <p class="search-text">truffles</p> -->
+    </div>
+    <div class="container-products">
+            <div class="product-card">
+                <a href="./product.html">
+                    <img src="./truffle.jpeg" alt="truffle" class="product-image">
+                </a>
+                <h2 class="product-price">$1.50</h2>
+                <h2 class="product-name">café au lait truffle</h2>
+                <button class="cta-button">add to card</button>
+            </div>
+            <div class="product-card">
+                <a href="./product.html">
+                    <img src="./truffle.jpeg" alt="truffle" class="product-image">
+                </a>
+                <h2 class="product-price">$1.50</h2>
+                <h2 class="product-name">café au lait truffle</h2>
+                <button class="cta-button">add to card</button>
+            </div>
+            <div class="product-card">
+                <a href="./product.html">
+                    <img src="./truffle.jpeg" alt="truffle" class="product-image">
+                </a>
+                <h2 class="product-price">$1.50</h2>
+                <h2 class="product-name">café au lait truffle</h2>
+                <button class="cta-button">add to card</button>
+            </div>
+            <div class="product-card">
+                <a href="./product.html">
+                    <img src="./truffle.jpeg" alt="truffle" class="product-image">
+                </a>
+                <h2 class="product-price">$1.50</h2>
+                <h2 class="product-name">café au lait truffle</h2>
+                <button class="cta-button">add to card</button>
+            </div>
+    </div>
+    <div class="container-products">
+        <div class="product-card">
+            <a href="./product.html">
+                <img src="./truffle.jpeg" alt="truffle" class="product-image">
+            </a>
+            <h2 class="product-price">$1.50</h2>
+            <h2 class="product-name">café au lait truffle</h2>
+            <button class="cta-button">add to card</button>
+        </div>
+        <div class="product-card">
+            <a href="./product.html">
+                <img src="./truffle.jpeg" alt="truffle" class="product-image">
+            </a>
+            <h2 class="product-price">$1.50</h2>
+            <h2 class="product-name">café au lait truffle</h2>
+            <button class="cta-button">add to card</button>
+        </div>
+        <div class="product-card">
+            <a href="./product.html">
+                <img src="./truffle.jpeg" alt="truffle" class="product-image">
+            </a>
+            <h2 class="product-price">$1.50</h2>
+            <h2 class="product-name">café au lait truffle</h2>
+            <button class="cta-button">add to card</button>
+        </div>
+        <div class="product-card">
+            <a href="./product.html">
+                <img src="./truffle.jpeg" alt="truffle" class="product-image">
+            </a>
+            <h2 class="product-price">$1.50</h2>
+            <h2 class="product-name">café au lait truffle</h2>
+            <button class="cta-button">add to card</button>
+        </div>
+</div>
+ 
+</div>
+
+    </div>
+</body>
+</html>

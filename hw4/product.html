@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>shopper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container {
+        margin-right: 140px;
+        margin-left: 120px;
+        margin-top: 70px;
+    }
+
+    .logo {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #1A4E1F;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .navmenu {
+        display: flex;
+        width: 509px;
+        justify-content: space-between;
+    }
+
+    .main-content {
+        margin-top: 124px;
+    }
+
+    .left-column {
+        width: 675px;
+    }
+
+    .active-nav {
+        font-weight: 500;
+    }
+    
+   
+    .heading {
+        font-weight: 500;
+        font-size: 57px;
+    }
+
+    .subheading {
+        margin-top: 9px;
+        display: flex;
+    }
+
+    .price {
+        font-weight: 500;
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.95);
+        margin-bottom: 55px;
+    }
+   
+    .text {
+        font-size: 24px;
+        line-height: 39px;
+        margin-bottom: 50px;
+    }
+
+    .image {
+        position: absolute;
+        width: 483.06px;
+        height: 415px;
+        left: 857px;
+        top: 328px;
+        object-fit: cover;
+        margin-top: -110px;
+    }
+
+    .cta-button {
+        width: 338px;
+        height: 80px;
+        background: #92CD98;
+        border-radius: 20.7407px;
+        font-weight: 500;
+        font-size: 36;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">shopper</div>
+            <ul class="navmenu">
+                <li>home</li>
+                <li class="active-nav">products</li>
+                <li>contact us</li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#1A4E1F" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                </li>
+            </ul>
+        </div>
+
+    <div class="main-content">
+        <div class="left-column">
+            <h1 class="heading">café au lait truffle</h1>
+            <div class="subheading">
+                <h2 class="price">$1.50</h2>
+            </div>
+            <p class="text">A velvety espresso ganache bathed in dark chocolate. Sourced from the finest cacao plantations and crafted by our artisans, we think Chocolato’s truffles are something special. A treat for the coffee lover in your life.</p>
+            <button class="cta-button">add to cart</button>
+        </div>
+        <div class="right-column">
+            <img class="image" src="./truffle.jpeg" alt="truffle">
+        </div>
+    </div>
+
+ 
+    </div>
+</body>
+</html>
