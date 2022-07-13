@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normal vs reset</title>
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+        width: 600px;
+        margin: auto;
+        font-family: Poppins;
+    }
+</style>
+<body>
+    <h4>Avi Sternlieb <br> W1987120</h4>
+    <h1>normalize vs reset</h1>
+    <p>
+        CSS is a gnarly thing. The W3C released the first standard in 1996, less than 30 years ago, and it remains a work in progress. There's no one industry standard for how to deal with style sheets, or almost anything related to the web for that matter. Javascript is a whole 'nother mess!
+        <br><br>
+
+        One of the core annoyances is the fact that different browsers start with different styling defaults. That means that a site with the same CSS may be rendered differently from one browser to another. There are two common approaches for setting cross-browser defaults: normalize and reset css. There’s no one normalize or reset stylesheet, but they’re two general philosophies within which there’s some variety.
+        <br><br>
+        
+        Reset CSS sets out to completely reset styling. Many elements that were previously displayed differently will render the same. All six headings will be the same size, and a superscript will look like a paragraph. As the name suggests it’s a clear reset, about as much as possible.
+        <br><br>
+        
+        That does get you consistency across browsers, but it may be overkill. You might want your h1s bigger than your h2s, and your superscripts looking like… superscripts. And you may not want to have to do that manually. That’s the aim of normalize CSS— to set “sensible defaults.” But of course, that means it’s opinionated by nature.
+        <br><br>
+        
+        So reset removes styling, normalize makes styling consistent. Reset leaves you with a blank slate, normalize leaves you with a base. But even after deciding which approach is appropriate for your project, you still have your work cut out for you. Which normalize stylesheet are you going to use?!
+        <br><br>
+        
+        <h3>addendum</h3>
+        The above is the primary difference, and really the defining one. But there are other subtle differences, too, which didn't fit neatly into the response. Normalize has a broader scope than reset, and this is another area where normalize makes some opinionated decisions. It wants to set sensible defaults, period, so many of the big normalizing stylesheets also correct some common bugs that are out of the scope of reset. For instance, there’s a styling bug with the button tag on iOS and other browser-specific issues and there are also more general oddities like the lack of font inheritance by form elements.
+        <br><br>
+        
+        Normalize.css, which is the one I looked into, fixes all of that. Whereas, again, resets just unset styling, without changing anything else.
+
+        <br><br>
+        <h3>sources</h3>
+        <ul>
+            <li><a href="https://nicolasgallagher.com/about-normalize-css/">Gallagher, Nicolas. <em>About Normalize CSS.</em> 2011</a></li>
+            <li><a href="https://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css"><em>What is the difference between Normalize.css and Reset CSS?.</em> Stack Overflow, 2011</a></li>
+        </ul>
+    </p>
+    
+</body>
+</html>
