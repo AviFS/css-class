@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
 </head>
 <style>
-    .container {
+
+.container {
         margin-right: 140px;
         margin-left: 120px;
         margin-top: 70px;
@@ -23,7 +24,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 32px;
-        color: #1A4E1F;
+        color: #004F17;
     }
 
     .navbar {
@@ -36,7 +37,101 @@
         display: flex;
         width: 509px;
         justify-content: space-between;
+        font-size: 18px;
     }
+
+    .active-nav {
+        font-weight: 500;
+    }
+
+    .nav-item:hover {
+        color: #505050;
+        cursor: pointer;
+    }
+
+    .nav-item:active {
+        color: black;
+    }
+
+    .active-nav::before {
+        content: "-----";
+        color: rgba(0, 0, 0, 0);
+        pointer-events: none;
+        position: absolute;
+        border-top: solid 2px green;
+    }
+
+    /* .nav-item:hover::before {
+        content: "-----";
+        color: rgba(0, 0, 0, 0);
+        pointer-events: none;
+        position: absolute;
+        border-top: #004F17 solid 2px;
+    } */
+
+    .navbar-icon {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 2px;
+        color: #004F17
+    }
+
+    .navbar-icon:hover {
+        cursor: pointer;
+        color: #3B7641;
+    }
+
+    .navbar-icon:active {
+        color: #004F17
+    }
+
+    .dropdown-parent {
+        position: relative;
+    }
+
+    .navbar-icon:hover+.dropdown-container {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .dropdown-container {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 35px;
+        left: -30px;
+        width: 93px;
+        height: 59px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .secondary-dropdown {
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        color: #3F7D4E;
+        border: #3F7D4E 2px solid;
+        text-align: center;
+        width: 74px;
+        height: 18px;
+        border-radius: 3px;
+    }
+
+    .primary-dropdown {
+        position: absolute;
+        top: 33px;
+        left: 9px;
+        background-color: #81CF93;
+        text-align: center;
+        width: 74px;
+        height: 17px;
+        border-radius: 3px;
+    }
+    
 
     .main-content {
         margin-top: 124px;
@@ -95,16 +190,21 @@
 </style>
 <body>
     <div class="container">
+
         <div class="navbar">
             <div class="logo">shopper</div>
             <ul class="navmenu">
-                <li>home</li>
-                <li class="active-nav">products</li>
-                <li>contact us</li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#1A4E1F" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
+                <li class="nav-item">home</li>
+                <li class="nav-item active-nav">products</li>
+                <li class="nav-item">contact us</li>
+                <li class="dropdown-parent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="navbar-icon" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                        <path fill="currentColor" d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z"></path>
+                    </svg>
+                    <div class="dropdown-container">
+                        <a href="#" class="secondary-dropdown">account</a>
+                        <a href="#" class="primary-dropdown">log out</a>
+                    </div>
                 </li>
             </ul>
         </div>
